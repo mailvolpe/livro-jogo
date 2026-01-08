@@ -1,0 +1,141 @@
+{
+  "cenas": [
+    {
+      "id": "inicio",
+      "texto": "O arqueiro, o espadachim e o mago chegam à entrada de uma caverna escura, onde dizem que um goblin gigante vive.",
+      "opcoes": [
+        { "texto": "Entrar cautelosamente", "proxima": "entrada_caverna" },
+        { "texto": "Fazer um plano", "proxima": "plano" }
+      ]
+    },
+    {
+      "id": "entrada_caverna",
+      "texto": "Vocês entram na caverna e ouvem um rugido ao fundo.",
+      "opcoes": [
+        { "texto": "Avançar juntos", "proxima": "corredor_escuro" },
+        { "texto": "O mago lança luz", "proxima": "luz_mago" }
+      ]
+    },
+    {
+      "id": "plano",
+      "texto": "Vocês decidem que o arqueiro irá na frente, o espadachim no meio e o mago atrás.",
+      "opcoes": [
+        { "texto": "Entrar na caverna", "proxima": "entrada_caverna" }
+      ]
+    },
+    {
+      "id": "corredor_escuro",
+      "texto": "O corredor é escuro e úmido. Algo se move nas sombras.",
+      "opcoes": [
+        { "texto": "O arqueiro dispara uma flecha", "proxima": "flecha_sombras" },
+        { "texto": "O espadachim avança", "proxima": "espada_sombras" }
+      ]
+    },
+    {
+      "id": "luz_mago",
+      "texto": "O mago ilumina o caminho, revelando armadilhas no chão.",
+      "opcoes": [
+        { "texto": "Desviar das armadilhas", "proxima": "sala_armadilhas" },
+        { "texto": "Tentar desarmar", "proxima": "desarmar_armadilha" }
+      ]
+    },
+    {
+      "id": "flecha_sombras",
+      "texto": "A flecha atinge um rato gigante, que foge assustado.",
+      "opcoes": [
+        { "texto": "Avançar", "proxima": "sala_goblin" }
+      ]
+    },
+    {
+      "id": "espada_sombras",
+      "texto": "O espadachim corta as sombras, mas nada encontra. O grupo segue em frente.",
+      "opcoes": [
+        { "texto": "Avançar", "proxima": "sala_goblin" }
+      ]
+    },
+    {
+      "id": "sala_armadilhas",
+      "texto": "Vocês desviam das armadilhas e chegam a uma grande sala iluminada por tochas.",
+      "opcoes": [
+        { "texto": "Explorar a sala", "proxima": "sala_goblin" }
+      ]
+    },
+    {
+      "id": "desarmar_armadilha",
+      "texto": "O arqueiro tenta desarmar uma armadilha, mas aciona um alarme! O goblin gigante é alertado.",
+      "opcoes": [
+        { "texto": "Correr para a sala", "proxima": "sala_goblin_alerta" }
+      ]
+    },
+    {
+      "id": "sala_goblin",
+      "texto": "Vocês encontram o goblin gigante dormindo sobre um monte de ouro.",
+      "opcoes": [
+        { "texto": "Atacar juntos", "proxima": "ataque_goblin" },
+        { "texto": "Tentar roubar o ouro", "proxima": "roubar_ouro" }
+      ]
+    },
+    {
+      "id": "sala_goblin_alerta",
+      "texto": "O goblin gigante está acordado e furioso!",
+      "opcoes": [
+        { "texto": "O mago lança uma magia", "proxima": "magia_goblin" },
+        { "texto": "O espadachim defende o grupo", "proxima": "defesa_espadachim" }
+      ]
+    },
+    {
+      "id": "ataque_goblin",
+      "texto": "O grupo ataca o goblin gigante, que acorda e revida.",
+      "opcoes": [
+        { "texto": "O arqueiro mira nos olhos", "proxima": "arqueiro_olhos" },
+        { "texto": "O mago lança fogo", "proxima": "mago_fogo" }
+      ]
+    },
+    {
+      "id": "roubar_ouro",
+      "texto": "O arqueiro tenta pegar o ouro, mas o goblin acorda!",
+      "opcoes": [
+        { "texto": "Fugir", "proxima": "fuga_final" },
+        { "texto": "Enfrentar o goblin", "proxima": "ataque_goblin" }
+      ]
+    },
+    {
+      "id": "magia_goblin",
+      "texto": "O mago lança uma magia poderosa e o goblin fica tonto.",
+      "opcoes": [
+        { "texto": "Aproveitar e atacar", "proxima": "ataque_final" }
+      ]
+    },
+    {
+      "id": "defesa_espadachim",
+      "texto": "O espadachim defende o grupo, mas o goblin é muito forte.",
+      "opcoes": [
+        { "texto": "O mago tenta ajudar", "proxima": "magia_goblin" }
+      ]
+    },
+    {
+      "id": "arqueiro_olhos",
+      "texto": "O arqueiro acerta os olhos do goblin, que fica cego e enfurecido.",
+      "opcoes": [
+        { "texto": "Atacar novamente", "proxima": "ataque_final" }
+      ]
+    },
+    {
+      "id": "mago_fogo",
+      "texto": "O mago lança uma bola de fogo e o goblin recua.",
+      "opcoes": [
+        { "texto": "O espadachim avança", "proxima": "ataque_final" }
+      ]
+    },
+    {
+      "id": "ataque_final",
+      "texto": "Juntos, vocês derrotam o goblin gigante! A caverna está livre e o tesouro é de vocês.",
+      "opcoes": []
+    },
+    {
+      "id": "fuga_final",
+      "texto": "Vocês fogem da caverna, mas sem o tesouro. Pelo menos estão vivos!",
+      "opcoes": []
+    }
+  ]
+}
