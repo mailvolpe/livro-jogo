@@ -2,140 +2,126 @@
   "cenas": [
     {
       "id": "inicio",
-      "texto": "O arqueiro, o espadachim e o mago chegam à entrada de uma caverna escura, onde dizem que um goblin gigante vive.",
+      "texto": "O arqueiro, o espadachim e o mago cairam no vale e avistam um goblin,qual liderara o grupo",
       "opcoes": [
-        { "texto": "Entrar cautelosamente", "proxima": "entrada_caverna" },
-        { "texto": "Fazer um plano", "proxima": "plano" }
+        { "texto": "o arqueiro", "proxima": "entrada_arqueiro" },
+        { "texto": "o mago", "proxima": "entrada_mago" },
+        { "texto": "o espadachim", "proxima": "entrada_espadachim" }
       ]
     },
     {
-      "id": "entrada_caverna",
-      "texto": "Vocês entram na caverna e ouvem um rugido ao fundo.",
+      "id": "entrada_arqueiro",
+      "texto": "o arqueiro olha ao redor.",
       "opcoes": [
-        { "texto": "Avançar juntos", "proxima": "corredor_escuro" },
-        { "texto": "O mago lança luz", "proxima": "luz_mago" }
+        { "texto": "o arqueiro ataca", "proxima": "ponto_crucial" },
+        { "texto": "o mago ataca", "proxima": "juntar_poder" }
       ]
     },
     {
-      "id": "plano",
-      "texto": "Vocês decidem que o arqueiro irá na frente, o espadachim no meio e o mago atrás.",
+      "id": "entrada_mago",
+      "texto": "o mago olha ao redor.",
       "opcoes": [
-        { "texto": "Entrar na caverna", "proxima": "entrada_caverna" }
+
+        { "texto": "o mago ataca", "proxima": "juntar_poder" }
       ]
     },
     {
-      "id": "corredor_escuro",
-      "texto": "O corredor é escuro e úmido. Algo se move nas sombras.",
+      "id": "entrada_espadachim",
+      "texto": "o espadachim olha ao redor.",
       "opcoes": [
-        { "texto": "O arqueiro dispara uma flecha", "proxima": "flecha_sombras" },
-        { "texto": "O espadachim avança", "proxima": "espada_sombras" }
+        { "texto": "a espadachim ataca novamente", "proxima": "espada_merda" },
+        { "texto": "o mago ataca", "proxima": "juntar_poder" }
       ]
     },
     {
-      "id": "luz_mago",
-      "texto": "O mago ilumina o caminho, revelando armadilhas no chão.",
+      "id": "ponto_crucial",
+      "texto": "o arqueiro visualiza um ponto crucial.",
       "opcoes": [
-        { "texto": "Desviar das armadilhas", "proxima": "sala_armadilhas" },
-        { "texto": "Tentar desarmar", "proxima": "desarmar_armadilha" }
+        { "texto": "acerta o ponto ", "proxima": "templo_desaba" },
+        { "texto": "erra o ponto", "proxima": "encanto_a_flecha" }
       ]
     },
     {
-      "id": "flecha_sombras",
-      "texto": "A flecha atinge um rato gigante, que foge assustado.",
+      "id": "juntar_poder",
+      "texto": "o mago junta poder.",
       "opcoes": [
-        { "texto": "Avançar", "proxima": "sala_goblin" }
+        { "texto": "continuar juntando o poder", "proxima": "templo_desaba" },
+        { "texto": "passa parte do poder para o espadachim", "proxima": "poder_espadachim" }
       ]
     },
     {
-      "id": "espada_sombras",
-      "texto": "O espadachim corta as sombras, mas nada encontra. O grupo segue em frente.",
+      "id": "espada_merda",
+      "texto": "o espadachim tenta atacar mas a espada escorrega e mata todos.",
       "opcoes": [
-        { "texto": "Avançar", "proxima": "sala_goblin" }
+        { "texto": "reiniciar", "proxima": "inicio" }
       ]
     },
     {
-      "id": "sala_armadilhas",
-      "texto": "Vocês desviam das armadilhas e chegam a uma grande sala iluminada por tochas.",
+      "id": "templo_desaba",
+      "texto": "o templo desaba e todos morrem.",
       "opcoes": [
-        { "texto": "Explorar a sala", "proxima": "sala_goblin" }
+        { "texto": "reiniciar", "proxima": "inicio" }
       ]
     },
     {
-      "id": "desarmar_armadilha",
-      "texto": "O arqueiro tenta desarmar uma armadilha, mas aciona um alarme! O goblin gigante é alertado.",
+      "id": "encanto_a_flecha",
+      "texto": "a flecha é encantada e volta para o arqueiro, matando todos.",
       "opcoes": [
-        { "texto": "Correr para a sala", "proxima": "sala_goblin_alerta" }
+        { "texto": "reiniciar", "proxima": "inicio" }
       ]
     },
     {
-      "id": "sala_goblin",
-      "texto": "Vocês encontram o goblin gigante dormindo sobre um monte de ouro.",
+      "id": "poder_espadachim",
+      "texto": "o espadachim recebe o poder.",
       "opcoes": [
-        { "texto": "Atacar juntos", "proxima": "ataque_goblin" },
-        { "texto": "Tentar roubar o ouro", "proxima": "roubar_ouro" }
+        { "texto": "devolver o poder", "proxima": "devolver_poder" },
+        { "texto": "usar o poder para atacar o goblin", "proxima": "ataque_critico" }
       ]
     },
     {
-      "id": "sala_goblin_alerta",
-      "texto": "O goblin gigante está acordado e furioso!",
+      "id": "devolver_poder",
+      "texto": "O espadachim devolve o poder pro mago",
       "opcoes": [
-        { "texto": "O mago lança uma magia", "proxima": "magia_goblin" },
-        { "texto": "O espadachim defende o grupo", "proxima": "defesa_espadachim" }
+        { "texto": "dar tacada na pedra", "proxima": "mago_baseball" },
+        { "texto": "manda o elfo disparar a ultima flecha", "proxima": "ultima_flecha" }
       ]
     },
     {
-      "id": "ataque_goblin",
-      "texto": "O grupo ataca o goblin gigante, que acorda e revida.",
+      "id": "ataque_critico",
+      "texto": "o espadachim usa o poder e acerta um ataque critico no goblin, ferindo ele.",
       "opcoes": [
-        { "texto": "O arqueiro mira nos olhos", "proxima": "arqueiro_olhos" },
-        { "texto": "O mago lança fogo", "proxima": "mago_fogo" }
+        { "texto": "da tacada na pedra", "proxima": "mago_baseball" },
+        { "texto": "ataque final", "proxima": "explosao_x" }
       ]
     },
     {
-      "id": "roubar_ouro",
-      "texto": "O arqueiro tenta pegar o ouro, mas o goblin acorda!",
-      "opcoes": [
-        { "texto": "Fugir", "proxima": "fuga_final" },
-        { "texto": "Enfrentar o goblin", "proxima": "ataque_goblin" }
-      ]
-    },
-    {
-      "id": "magia_goblin",
-      "texto": "O mago lança uma magia poderosa e o goblin fica tonto.",
-      "opcoes": [
-        { "texto": "Aproveitar e atacar", "proxima": "ataque_final" }
-      ]
-    },
-    {
-      "id": "defesa_espadachim",
-      "texto": "O espadachim defende o grupo, mas o goblin é muito forte.",
-      "opcoes": [
-        { "texto": "O mago tenta ajudar", "proxima": "magia_goblin" }
-      ]
-    },
-    {
-      "id": "arqueiro_olhos",
-      "texto": "O arqueiro acerta os olhos do goblin, que fica cego e enfurecido.",
-      "opcoes": [
-        { "texto": "Atacar novamente", "proxima": "ataque_final" }
-      ]
-    },
-    {
-      "id": "mago_fogo",
-      "texto": "O mago lança uma bola de fogo e o goblin recua.",
-      "opcoes": [
-        { "texto": "O espadachim avança", "proxima": "ataque_final" }
-      ]
-    },
-    {
-      "id": "ataque_final",
-      "texto": "Juntos, vocês derrotam o goblin gigante! A caverna está livre e o tesouro é de vocês.",
+      "id": "mago_baseball",
+      "texto": "o mago usa o poder para jogar a pedra como um jogador de baseball, acertando o goblin e matando ele.",
       "opcoes": []
     },
     {
-      "id": "fuga_final",
-      "texto": "Vocês fogem da caverna, mas sem o tesouro. Pelo menos estão vivos!",
+      "id": "ultima_flecha",
+      "texto": "o arqueiro dispara a ultima flecha que tinha, acertando o goblin e matando ele.",
+      "opcoes": [
+        { "texto": "Dá facadas com a flecha", "proxima": "facadas_flecha" }
+      ]
+    },
+    {
+      "id": "explosao_x",
+      "texto": "o mago cria uma explosão de poder X, matando o goblin.",
       "opcoes": []
+    },
+    {
+      "id": "facadas_flecha",
+      "texto": "o espadachim dá várias facadas com a flecha no goblin, matando ele.",
+      "opcoes": []
+    },
+    {
+      "id": "fim",
+      "texto": "Parabéns! Vocês derrotaram o goblin e sobreviveram ao vale!",
+      "opcoes": [
+        { "texto": "reiniciar", "proxima": "inicio" }
+      ]
     }
   ]
 }
