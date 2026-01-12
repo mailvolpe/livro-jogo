@@ -37,7 +37,7 @@
       "id": "ponto_crucial",
       "texto": "o arqueiro visualiza um ponto crucial.",
       "opcoes": [
-        { "texto": "acerta o ponto ", "proxima": "templo_desaba" },
+        { "texto": "acerta o ponto ", "proxima": "montanha_desaba" },
         { "texto": "erra o ponto", "proxima": "encanto_a_flecha" }
       ]
     },
@@ -45,7 +45,7 @@
       "id": "juntar_poder",
       "texto": "o mago junta poder.",
       "opcoes": [
-        { "texto": "continuar juntando o poder", "proxima": "templo_desaba" },
+        { "texto": "continuar juntando o poder", "proxima": "montanha_desaba" },
         { "texto": "passa parte do poder para o espadachim", "proxima": "poder_espadachim" }
       ]
     },
@@ -55,8 +55,8 @@
       "opcoes": []
     },
     {
-      "id": "templo_desaba",
-      "texto": "o templo desaba e todos morrem.",
+      "id": "montanha_desaba",
+      "texto": "a montanha desaba e todos morrem.",
       "opcoes": []
     },
     {

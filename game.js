@@ -43,7 +43,7 @@ function mostrarCena(id) {
     fimMsg.textContent = 'Fim!';
 
     const reiniciarBtn = document.createElement('button');
-    reiniciarBtn.textContent = 'Jogar Novamente';
+    reiniciarBtn.textContent = 'Jogar de novo';
     reiniciarBtn.onclick = () => mostrarCena('inicio');
 
     fimMsg.appendChild(reiniciarBtn);
