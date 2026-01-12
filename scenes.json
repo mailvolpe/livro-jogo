@@ -52,23 +52,17 @@
     {
       "id": "espada_merda",
       "texto": "o espadachim tenta atacar mas a espada escorrega e mata todos.",
-      "opcoes": [
-        { "texto": "reiniciar", "proxima": "inicio" }
-      ]
+      "opcoes": []
     },
     {
       "id": "templo_desaba",
       "texto": "o templo desaba e todos morrem.",
-      "opcoes": [
-        { "texto": "reiniciar", "proxima": "inicio" }
-      ]
+      "opcoes": []
     },
     {
       "id": "encanto_a_flecha",
       "texto": "a flecha é encantada e volta para o arqueiro, matando todos.",
-      "opcoes": [
-        { "texto": "reiniciar", "proxima": "inicio" }
-      ]
+      "opcoes": []
     },
     {
       "id": "poder_espadachim",
@@ -101,7 +95,7 @@
     },
     {
       "id": "ultima_flecha",
-      "texto": "o arqueiro dispara a ultima flecha que tinha, acertando o goblin e matando ele.",
+      "texto": "o arqueiro dispara a ultima flecha que tinha, acertando o goblin e ferindo ele.",
       "opcoes": [
         { "texto": "Dá facadas com a flecha", "proxima": "facadas_flecha" }
       ]
