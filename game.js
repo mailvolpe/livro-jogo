@@ -16,25 +16,16 @@ function mostrarCena(id) {
   const cenaTexto = document.getElementById('scene-text');
   const opcoesDiv = document.getElementById('options');
   const cenaImagem = document.getElementById('scene-image'); // Assuming an img element with this ID exists
+  cenaImagem.style.display = 'none';
 
   cenaTexto.textContent = cena.texto;
   opcoesDiv.innerHTML = '';
 
   // Update the image source
   if (cenaImagem) {
-    const imagemSrc = `imagens/${id}.webp`;
-    fetch(imagemSrc, { method: 'HEAD' })
-      .then(response => {
-        if (response.ok) {
-          cenaImagem.src = imagemSrc;
-          cenaImagem.style.display = 'block';
-        } else {
-          cenaImagem.style.display = 'none';
-        }
-      })
-      .catch(() => {
-        cenaImagem.style.display = 'none';
-      });
+    const imagemSrc = `imagens/${id}.jpg`;
+    cenaImagem.src = imagemSrc;
+    cenaImagem.style.display = 'block';
   }
 
   if (cena.opcoes.length === 0) {

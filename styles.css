@@ -3,25 +3,18 @@ body {
   background: #000;
   margin: 0;
   padding: 0;
-  color: #fff1dc;
+  color: #485e86;
 }
 
 #game-container {
+  background: #555 url('imagens/fundo.jpg') no-repeat center center;
 
-  background: #555 url('imagens/fundo_caverna.webp') no-repeat center center;
   background-size: cover;
-  max-width: 500px;
+  max-width: 400px;
   margin: 9px auto;
   padding: 15px 24px;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
-
-#scene-image {
-  width: 100%;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  border:6px solid #121213;
 }
 
 #scene-text {
@@ -29,12 +22,34 @@ body {
   margin-bottom: 24px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  text-shadow: 1px 1px 2px #000;
-  background-color: #ffffff35;
+  text-shadow: 1px 1px 2px #eee;
+  background-color: #ffffff99;
   margin-bottom: 0px;
   padding: 15px;
+  border:2px solid #81a5e7;
+  border-bottom: none;
+
 
 }
+
+.img-container {
+  text-align: center;
+  padding: 2px 26px 14px 14px;
+  background-color: #ffffff99;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border:2px solid #81a5e7;
+  border-top: none;
+}
+
+
+#scene-image {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border:1px solid #81a5e7;
+}
+
 
 #options button {
   font-family: serif;
@@ -45,36 +60,26 @@ body {
   font-size: 1.3em;
   border: none;
   border-radius: 6px;
-  background: #dbc235;
-  color: #333;
-  background: #121213;
-  color: #ffddab;
-  border: 1px solid #ffddab;
+  background: #fff;
+  color: #81a5e7;
+  border: 2px solid #81a5e7;
   cursor: pointer;
   transition: background 0.6s;
   text-transform: uppercase;
 }
 
 #options button:hover {
-  background: #444640;
-  color: #ffddab;
-  border: 1px solid #ebb15b;
+  background: #e3e8e9;
+  color: #5e60a8;
+  border: 2px solid #5e60a8;
 
 }
 
 .fim-msg {
   font-size: 1.3em;
   font-weight: bold;
-  color: #FFF;
+  color: #333;
   margin: 32px;
   text-align: center;
 }
 
-.img-container {
-  text-align: center;
-  padding: 2px 26px 14px 14px;
-  
-  background-color: #ffffff35;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
